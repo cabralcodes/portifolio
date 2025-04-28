@@ -1,0 +1,29 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(/fonts/Roboto/static/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "FiraCode-Regular" ;
+    src: url(/fonts/Fira_Code/static/FiraCode-Regular.ttf);
+}
+
+p, h1 {
+    font-family: "Roboto-Regular";
+}
+
+.main__hi{
+    font-family: FiraCode-Regular;
+    text-decoration: none;
+}
+
+.menu__1, .menu__2, .menu__3 {
+    font-family: FiraCode-Regular;
+    list-style: none;
+}
+
+.instagram{
+    width: 30px;
+    height: 30px;
+}
