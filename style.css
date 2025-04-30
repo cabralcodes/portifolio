@@ -9,21 +9,105 @@
     src: url(/fonts/Fira_Code/static/FiraCode-Regular.ttf);
 }
 
+html, body{
+    height: 100%;
+    margin: 0;
+    
+} 
+
+.fundo {
+    background-color: #0A192F;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: -1;
+  
+    
+ }
+
+
+
+
+ .main {
+     margin-top: 100px;
+     margin-left: 140px;
+ }
+
+h1 {
+    font-size: 50px;
+}
+
 p, h1 {
     font-family: "Roboto-Regular";
+    color: rgb(209, 182, 247);
 }
 
 .main__hi{
     font-family: FiraCode-Regular;
     text-decoration: none;
+    
 }
 
 .menu__1, .menu__2, .menu__3 {
+    display: inline-block;
+    font-size: 13px;
+    margin-right: 20px;
     font-family: FiraCode-Regular;
     list-style: none;
+    text-decoration: none;
+    
+}
+
+a {
+    color: white;
+}
+
+.button__more{
+    width: 120px;
+    height: 40px;
+    margin-bottom: 25px;
+    background-color: transparent;
+    border-color: #44A694;
+    font-family:"FiraCode-Regular" ;
+    border-radius: 10px;
+}
+
+.main__text {
+    width: 450px;
+    font-size: 15px;
+}
+
+.contact{
+    display: flex;
+    gap: 10px;
 }
 
 .instagram{
     width: 30px;
     height: 30px;
+}
+
+@media (max-width:320px) {
+    .fundo {
+        height:100vh;
+        width: 100%;
+    }
+    .menu__1, .menu__2, .menu__3 {
+        font-size: 11px;
+        margin-right: 5px;
+    }
+    .main {
+        
+        margin-left: 50px;
+    }
+    
+    h1 {
+        width: 300px;
+        font-size: 20px;
+    }
+    .main__text {
+        width: 270px;
+        font-size: 13px;
+    }
 }
