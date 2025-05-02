@@ -1,18 +1,19 @@
 @charset "UTF-8";
 @font-face {
     font-family: "Roboto-Regular";
-    src: url(/fonts/Roboto/static/Roboto-Regular.ttf);
+    src: url(fonts/Roboto/static/Roboto-Regular.ttf);
     font-weight: 400;
 }
 @font-face {
     font-family: "FiraCode-Regular" ;
-    src: url(/fonts/Fira_Code/static/FiraCode-Regular.ttf);
+    src: url(fonts/Fira_Code/static/FiraCode-Regular.ttf);
 }
 
 html, body{
     height: 100%;
     margin: 0;
-    
+    padding: 0;
+    overflow: hidden; 
 } 
 
 .fundo {
@@ -21,13 +22,8 @@ html, body{
     height: 100vh;
     width: 100vw;
     position: fixed;
-    z-index: -1;
-  
     
  }
-
-
-
 
  .main {
      margin-top: 100px;
@@ -44,7 +40,7 @@ p, h1 {
 }
 
 .main__hi{
-    font-family: FiraCode-Regular;
+    font-family: "FiraCode-Regular";
     text-decoration: none;
     
 }
@@ -53,40 +49,92 @@ p, h1 {
     display: inline-block;
     font-size: 13px;
     margin-right: 20px;
-    font-family: FiraCode-Regular;
+    font-family: "FiraCode-Regular";
     list-style: none;
-    text-decoration: none;
+    transition:  linear 150ms ;
+   
+    
+}
+.menu__3:hover{
+    transform: translate(0px, -4px);
+    
     
 }
 
-a {
-    color: white;
+.menu__1:hover {
+    
+    transform: translate(0px, -4px);
 }
 
-.button__more{
-    width: 120px;
-    height: 40px;
-    margin-bottom: 25px;
-    background-color: transparent;
-    border-color: #44A694;
-    font-family:"FiraCode-Regular" ;
-    border-radius: 10px;
+.menu__2:hover{
+    
+    transform: translate(0px, -4px);
 }
+
+
+
+a {
+    color: rgba(255, 255, 255, 0.575);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.button__more{
+    
+    font-size: 15px;
+    background-color: transparent;
+    font-family:"FiraCode-Regular" ;
+    border: 1px solid ;
+    border-radius: 6px 6px;
+    border-color: #5bffe1;
+    padding: 7px 7px 10px 10px;
+    transition: color .5s linear;
+    
+    
+}
+
+.button__more:hover{
+   color: rgb(0, 255, 0);
+}
+
+
 
 .main__text {
     width: 450px;
     font-size: 15px;
+    margin-bottom: 40px;
 }
 
 .contact{
     display: flex;
     gap: 10px;
+    margin-top: 35px;
+    
 }
+
+
 
 .instagram{
     width: 30px;
     height: 30px;
+    transition: transform .3s linear;
 }
+
+.instagram:hover{
+    transform: translate(0px, -5px);
+}
+
+.github {
+    transition: transform .3s linear;
+}
+
+.github:hover{
+    transform: translate(0px, -5px);
+}
+
+
 
 @media (max-width:320px) {
     .fundo {
@@ -111,3 +159,4 @@ a {
         font-size: 13px;
     }
 }
+
